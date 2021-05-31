@@ -7,18 +7,18 @@ Risk Model management IT Python assessment
 This project implements part of a text processing library. My task is to create and test class which implements two interfaces - 
  'IWordFrequency'  and 'IWordFrequencyAnalyzer' 
 
-interface IWordFrequency 
-{
-	string Word   { get; }
-	int Frequency { get; }
-}
+	interface IWordFrequency 
+	{
+		string Word   { get; }
+		int Frequency { get; }
+	}
 
-interface IWordFrequencyAnalyzer 
-{
-	int calculate_highest_frequency(string text);
-	int calculate_frequency_for_word(string text, string word);
-	IList<IWordFrequency> calculate_most_frequent_n_words(string text, int n);
-}
+	interface IWordFrequencyAnalyzer 
+	{
+		int calculate_highest_frequency(string text);
+		int calculate_frequency_for_word(string text, string word);
+		IList<IWordFrequency> calculate_most_frequent_n_words(string text, int n);
+	}
         
 > Directory Structure
 
