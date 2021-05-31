@@ -52,22 +52,22 @@
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pytest & flask
 
-	```bash
-	pip install pytest
-	pip install flask
-	```
+```bash
+pip install pytest
+pip install flask
+```
 
 > Usage sample
 
-	```python
-	import pytest
-	import text_process
+```python
+import pytest
+import text_process
 
-	@pytest.fixture
-	def obj_creation():
-    		return text_process.CWordFrequencyAnalyzer()
+@pytest.fixture
+def obj_creation():
+	return text_process.CWordFrequencyAnalyzer()
 
-	```
+```
 
 > references
 
