@@ -36,8 +36,8 @@
 	|   │  					CWordFrequencyAnalyzer class 
 	│   ├── test_most_freq_n_words.py  # to test most frequency n words method 
 	|   │ 					in CWordFrequencyAnalyzer class
-	│   └── test_freq_specific_word.py # to test frequency of specific word method in CWordFrequencyAnalyzer class
-	│
+	│   └── test_freq_specific_word.py # to test frequency of specific word method 
+	|					in CWordFrequencyAnalyzer class
 	├── __init__.py 
 	├── app.py  			   # contains flask app interface for user
 	└── README.md			
