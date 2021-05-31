@@ -1,11 +1,11 @@
 > Project title
 
-Risk Model management IT Python assessment
+	Risk Model management IT Python assessment
 
 > Project description
 
-This project implements part of a text processing library. My task is to create and test class which implements two interfaces - 
- 'IWordFrequency'  and 'IWordFrequencyAnalyzer' 
+	This project implements part of a text processing library. 
+	My task is to create and test class which implements two interfaces - 'IWordFrequency'  and 'IWordFrequencyAnalyzer' 
 
 	interface IWordFrequency 
 	{
@@ -52,26 +52,26 @@ This project implements part of a text processing library. My task is to create 
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pytest & flask
 
-```bash
-pip install pytest
-pip install flask
-```
+	```bash
+	pip install pytest
+	pip install flask
+	```
 
 > Usage sample
 
-```python
-import pytest
-import text_process
+	```python
+	import pytest
+	import text_process
 
-@pytest.fixture
-def obj_creation():
-    return text_process.CWordFrequencyAnalyzer()
+	@pytest.fixture
+	def obj_creation():
+    		return text_process.CWordFrequencyAnalyzer()
 
-```
+	```
 
 > references
 
-test_cases_res_ss.png - screenshot of test cases of all test modules using 'pytest -v' terminal
+	test_cases_res_ss.png - screenshot of test cases of all test modules using 'pytest -v' terminal
 
 
 > This projects supports user interaction interface
@@ -85,8 +85,10 @@ test_cases_res_ss.png - screenshot of test cases of all test modules using 'pyte
 
 	127.0.0.1:5000/calculate_highest_frequency/<text> for getting the highest frequency from the text
 	try example 127.0.0.1:5000/calculate_highest_frequency/The sun shines over the lake
+	
 	127.0.0.1:5000/calculate_frequency_for_word/<text>/<word> for getting the frequency for the word from given text
 	try example 127.0.0.1:5000/calculate_frequency_for_word/The sun shines over the lake/the
+	
 	127.0.0.1:5000/calculate_most_frequent_n_words/<text>/<n> for getting the most frequent n words
 	try example 127.0.0.1:5000/calculate_most_frequent_n_words/The sun shines over the lake/2
 	user will get appropriate string response as a result after using any of the above mentioned route
