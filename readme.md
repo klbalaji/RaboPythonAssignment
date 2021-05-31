@@ -92,4 +92,4 @@ test_cases_res_ss.png - screenshot of test cases of all test modules using 'pyte
 	user will get appropriate string response as a result after using any of the above mentioned route
 
 	Note: 
-		input text and word should be in unicode format in query string for above url
+		input text and word should be in unicode format if special characters needs to be in query string for above url
