@@ -5,7 +5,8 @@
 > Project description
 
 	This project implements part of a text processing library. 
-	My task is to create and test class which implements two interfaces - 'IWordFrequency'  and 'IWordFrequencyAnalyzer' 
+	My task is to create and test class which implements two interfaces 
+	- 'IWordFrequency'  and 'IWordFrequencyAnalyzer' 
 
 	interface IWordFrequency 
 	{
@@ -31,8 +32,10 @@
 	│   │  
 	│   ├── __init__.py
 	│   ├── conftest.py  		   # contains text fixtures   
-	│   ├── test_highest_frequency.py  # to test highest frequency method in CWordFrequencyAnalyzer class
-	│   ├── test_most_freq_n_words.py  # to test most frequency n words method in CWordFrequencyAnalyzer class
+	│   ├── test_highest_frequency.py  # to test highest frequency method in 
+	|   │  					CWordFrequencyAnalyzer class 
+	│   ├── test_most_freq_n_words.py  # to test most frequency n words method 
+	|   │ 					in CWordFrequencyAnalyzer class
 	│   └── test_freq_specific_word.py # to test frequency of specific word method in CWordFrequencyAnalyzer class
 	│
 	├── __init__.py 
