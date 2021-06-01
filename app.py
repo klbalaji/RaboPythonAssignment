@@ -41,15 +41,11 @@ def create_app():
         Returns
         -------
             : str
-            final message for the user
+            final result to user
         """
-        try:
+        result = word_frequency_analyzer.calculate_highest_frequency(text)
+        return f"Highest Frequency in the given text is {result}"
 
-            result = word_frequency_analyzer.calculate_highest_frequency(text)
-            return f"Highest Frequency in the given text is {result}"
-        except ValueError as e:
-            message = get_exception_message(e)
-            return message
 
     # to calculate frequency for word
     @flask_app.route("/calculate_frequency_for_word/<text>/<word>",
@@ -67,11 +63,11 @@ def create_app():
             word for which frequency has to be found
         Returns
         -------
-            : int
-            if error returns 0 otherwise word frequency for specific word
+            : str
+            final result to user
         """
         result = word_frequency_analyzer.calculate_frequency_for_word(text, word)
-        return f"Frequency for {word} in the given text is {result}"
+        return f"Frequency for '{word}' in the given text is {result}"
 
 
 
@@ -92,12 +88,15 @@ def create_app():
 
         Returns
 
-            : list
-            if error returns empty list otherwise list out most frequent n words
+            : str
+            final result to user
         """
 
-        n=int(n)
-        result = word_frequency_analyzer.calculate_most_frequent_n_words(text, n)
+        try:
+            n=int(n)
+            result = word_frequency_analyzer.calculate_most_frequent_n_words(text, n)
+        except ValueError:
+            return f"Enter n as number in API request '127.0.0.1:5000/calculate_most_frequent_n_words/text/n'"
 
         return f"Most frequent {n} words are {result}"
 
