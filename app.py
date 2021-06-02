@@ -6,7 +6,7 @@ purpose : this module provides web interface using flask app to execute
 
 # import modules
 from flask import Flask
-from src import text_process
+from ..src import text_process
 
 
 def create_app():
