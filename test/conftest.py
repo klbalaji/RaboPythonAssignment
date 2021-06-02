@@ -11,7 +11,7 @@ Modified    : 31-05-2021
 
 # import modules
 import pytest
-from ..src import text_process
+from RaboPythonAssignments.src import text_process
 
 
 @pytest.fixture
